@@ -18,10 +18,15 @@ void main(List<String> arguments) {
 
   final answer = stdin.readLineSync();
 
-  print('Name the planet you would like to visit.');
+  if (answer == 'Y') {
+    print('Okay! Traveling to Mercury...\n'
+        'Arrived at Mercury. A very hot planet, closest to the sun.');
+  } else {
+    print('Name the planet you would like to visit.');
 
-  final planetName = stdin.readLineSync();
+    final planetName = stdin.readLineSync();
 
-  print('Traveling to $planetName...');
-  print('Arrived at $planetName. A very cold planet, furthest from the sun');
+    print('Traveling to $planetName...');
+    print('Arrived at $planetName. A very cold planet, furthest from the sun');
+  }
 }
